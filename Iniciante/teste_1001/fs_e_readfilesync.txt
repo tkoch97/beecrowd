@@ -1,0 +1,21 @@
+O módulo fs em Node.js é um módulo interno que fornece uma API para trabalhar com arquivos e diretórios no sistema de arquivos do 
+sistema operacional. Ele inclui métodos para ler e escrever arquivos, criar e excluir arquivos e diretórios, entre outras funções.
+
+O stdin é um objeto global em Node.js que representa a entrada padrão do processo (normalmente o terminal ou prompt de comando). 
+O stdin pode ser usado para ler dados de entrada inseridos pelo usuário durante a execução do programa.
+
+No código que você mostrou, o stdin é utilizado juntamente com o módulo fs para ler os dados de entrada do usuário em um programa Node.js. 
+O método readFileSync() do módulo fs é usado para ler os dados de entrada a partir do stdin e, em seguida, a função parseInt() é 
+usada para converter os valores de entrada em números inteiros para realizar o cálculo.
+
+Essa técnica é comum em programas de linha de comando em Node.js, onde o usuário insere os dados de entrada no terminal enquanto o programa 
+é executado. No entanto, essa técnica não é adequada para aplicativos da web ou outras situações em que a entrada do usuário é fornecida por 
+meio de uma interface gráfica do usuário (GUI).
+
+
+Se você estiver escrevendo um código JavaScript para ser executado em um ambiente de servidor (como no Node.js), 
+a técnica que você mostrou anteriormente, usando fs e stdin, pode ser mais adequada, especialmente se você estiver criando um 
+programa de linha de comando ou uma aplicação que recebe entradas de dados de um arquivo.
+
+o método readFileSync() do módulo fs é usado para ler os dados de entrada a partir do stdin. A string 'utf8' é usada como 
+segundo parâmetro da função para indicar que a codificação dos dados de entrada é UTF-8.
